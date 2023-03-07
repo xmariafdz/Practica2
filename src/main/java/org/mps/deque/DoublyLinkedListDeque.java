@@ -7,44 +7,56 @@ public class DoublyLinkedListDeque<T> implements DoubleEndedQueue<T> {
     private int size;
 
     public DoublyLinkedListDeque() {
-        // TODO
+        first = last = null;
+        size = 0;
     }
 
     @Override
     public void prepend(T value) {
-        // TODO
+        DequeNode<T> firstNode = new DequeNode<>(value, null, this.first);
+        if(this.first == null){
+            this.last = firstNode;
+        }
+        this.first = firstNode;
+        size++;
     }
 
     @Override
     public void append(T value) {
-        // TODO
+        DequeNode<T> lastNode = new DequeNode<>(value, this.last, null);
+        if(this.first == null){
+            this.first = lastNode;
+        }
+        this.last = lastNode;
+        size++;
     }
 
     @Override
     public void deleteFirst() {
-        // TODO
+        if(this.first == null) throw new DoubleEndedQueueException("La lista está vacía");
+        this.first = this.first.getNext();
+        size--;
     }
 
     @Override
     public void deleteLast() {
-        // TODO
+        if(this.first == null) throw new DoubleEndedQueueException("La lista está vacía");
+        this.last = this.last.getPrevious();
+        size--;
     }
 
     @Override
     public T first() {
-        // TODO
-        return null;
+        if(this.first == null) throw new DoubleEndedQueueException("La lista está vacía");
+        return this.first.getItem();
     }
-
-    @Override
     public T last() {
-        // TODO
-        return null;
+        if(this.first == null) throw new DoubleEndedQueueException("La lista está vacía");
+        return this.last.getItem();
     }
 
     @Override
     public int size() {
-        // TODO
-        return 0;
+        return size;
     }
 }
