@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: org.mps.deque.DequeNodeTest$SingleIntegerNodeTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.209 s - in org.mps.deque.DequeNodeTest$SingleIntegerNodeTest
+org.mps.deque.DequeNodeTest$SingleIntegerNodeTest.returnedItemByGetMethodIsCorrect  Time elapsed: 0.009 s
+org.mps.deque.DequeNodeTest$SingleIntegerNodeTest.SetItemIsCorrect  Time elapsed: 0.186 s
+org.mps.deque.DequeNodeTest$SingleIntegerNodeTest.singleNodeImpliesTerminalNode  Time elapsed: 0.004 s
+org.mps.deque.DequeNodeTest$SingleIntegerNodeTest.SingleNodeMeansFirstAndLast  Time elapsed: 0.002 s
