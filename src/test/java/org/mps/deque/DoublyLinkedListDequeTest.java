@@ -11,18 +11,33 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 
 /*
-    Test cases
-    1. size of empty queue -> 0
-    2. size of one item queue -> 1
-    3. size of three items queue -> 3
-    4. first item of empty queue -> exception
-    5. last item of empty queue -> exception
-    6. when one item list, first item = last item
-    7. first item of {1-2} is 1
-    8. last item of {1-2} is 2
-    9. first item of {1-2-3-4-5}
+    Test cases -> Divided into Tests over queues' size, first and last items and deleting items
+    -------------------------------------------------------------------------------------------
+    1) Tests for queues' size.
+        1.1 Size of empty queue -> 0
+        1.2 Size of one item queue -> 1
+        1.3 Size of three items queue -> 3
 
+    2) Tests for first and last items
+        2.1 First item of empty queue -> exception
+        2.2 Last item of empty queue -> exception
+        2.3 When one item list, first item = last item
+        2.4 First item of {1-2} is 1
+        2.5 Last item of {1-2} is 2
+        2.6 First item of {1-2-3-4-5} is 1
+        2.7 Last item of {1-2-3-4-5} is 5
+        2.8 First item of {5}.prepend(6) is 6
+        2.9 Last item of {5}.prepend(6) is 5
+        2.10 First item of {}.append(1) = last item of {}.append(1)
+        2.11 First item of {}.prepend(1) = last item of {}.append(1)
 
+    3) Tests for deleting items
+        3.1 Deleting first item from an empty queue throws an exception.
+        3.2 Deleting last item from an empty queue throws an exception.
+        3.3 Deleting first item from a single item queue makes an empty queue
+        3.4 Deleting last item from a single item queue makes an empty queue
+        3.5 Deleting first item from a four item queue makes a 3 items queue and makes next node first
+        3.6 Deleting last item from a four item queue makes a 3 items queue and makes next node first
  */
 public class DoublyLinkedListDequeTest {
     DoublyLinkedListDeque listDeque;
@@ -44,13 +59,13 @@ public class DoublyLinkedListDequeTest {
         }
 
         @Test
-        public void sizeOfAnOneItemListIsOne(){
+        public void sizeOfASingleItemQueueIsOne(){
             listDeque.append(1);
             assertEquals(listDeque.size(),1);
         }
 
         @Test
-        public void sizeOfAThreeItemsListIsThree(){
+        public void sizeOfAThreeItemsQueueIsThree(){
             listDeque.append(1);
             listDeque.append(2);
             listDeque.append(3);
@@ -73,7 +88,7 @@ public class DoublyLinkedListDequeTest {
         }
 
         @Test
-        public void firstAndlastItemOfAnOneItemListAreTheSame(){
+        public void firstAndlastItemOfASingleItemQueueAreTheSame(){
             listDeque.append(1);
             assertEquals(listDeque.first(),listDeque.last());
         }
@@ -153,7 +168,7 @@ public class DoublyLinkedListDequeTest {
         }
 
         @Test
-        public void deletingFirstItemFromAOneItemList(){
+        public void deletingFirstItemFromASingleItemQueue(){
             listDeque.append(1);
             listDeque.deleteFirst();
             assertThrows(DoubleEndedQueueException.class, () -> listDeque.first());
@@ -161,7 +176,7 @@ public class DoublyLinkedListDequeTest {
         }
 
         @Test
-        public void deletingLastItemFromAOneItemList(){
+        public void deletingLastItemFromASingleItemQueue(){
             listDeque.append(1);
             listDeque.deleteLast();
             assertThrows(DoubleEndedQueueException.class, () -> listDeque.first());
@@ -169,7 +184,7 @@ public class DoublyLinkedListDequeTest {
         }
 
         @Test
-        public void deletingFirstItemFromAFourItemsList(){
+        public void deletingFirstItemFromAFourItemsQueue(){
             listDeque.append(1);
             listDeque.append(2);
             listDeque.append(3);
