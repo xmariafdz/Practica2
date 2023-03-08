@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>DoublyLinkedListDeque.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">mps2023</a> &gt; <a href="index.source.html" class="el_package">org.mps.deque</a> &gt; <span class="el_source">DoublyLinkedListDeque.java</span></div><h1>DoublyLinkedListDeque.java</h1><pre class="source lang-java linenums">package org.mps.deque;
+
+public class DoublyLinkedListDeque&lt;T&gt; implements DoubleEndedQueue&lt;T&gt; {
+
+    private DequeNode&lt;T&gt; first;
+    private DequeNode&lt;T&gt; last;
+    private int size;
+
+<span class="fc" id="L9">    public DoublyLinkedListDeque() {</span>
+<span class="fc" id="L10">        first = last = null;</span>
+<span class="fc" id="L11">        size = 0;</span>
+<span class="fc" id="L12">    }</span>
+
+    @Override
+    public void prepend(T value) {
+<span class="nc" id="L16">        DequeNode&lt;T&gt; firstNode = new DequeNode&lt;&gt;(value, null, this.first);</span>
+<span class="nc bnc" id="L17" title="All 2 branches missed.">        if(this.first == null){</span>
+<span class="nc" id="L18">            this.last = firstNode;</span>
+        }
+<span class="nc" id="L20">        this.first = firstNode;</span>
+<span class="nc" id="L21">        size++;</span>
+<span class="nc" id="L22">    }</span>
+
+    @Override
+    public void append(T value) {
+<span class="fc" id="L26">        DequeNode&lt;T&gt; lastNode = new DequeNode&lt;&gt;(value, this.last, null);</span>
+<span class="fc bfc" id="L27" title="All 2 branches covered.">        if(this.first == null){</span>
+<span class="fc" id="L28">            this.first = lastNode;</span>
+        }
+<span class="fc" id="L30">        this.last = lastNode;</span>
+<span class="fc" id="L31">        size++;</span>
+<span class="fc" id="L32">    }</span>
+
+    @Override
+    public void deleteFirst() {
+<span class="nc bnc" id="L36" title="All 2 branches missed.">        if(this.first == null) throw new DoubleEndedQueueException(&quot;La lista está vacía&quot;);</span>
+<span class="nc" id="L37">        this.first = this.first.getNext();</span>
+<span class="nc" id="L38">        size--;</span>
+<span class="nc" id="L39">    }</span>
+
+    @Override
+    public void deleteLast() {
+<span class="nc bnc" id="L43" title="All 2 branches missed.">        if(this.first == null) throw new DoubleEndedQueueException(&quot;La lista está vacía&quot;);</span>
+<span class="nc" id="L44">        this.last = this.last.getPrevious();</span>
+<span class="nc" id="L45">        size--;</span>
+<span class="nc" id="L46">    }</span>
+
+    @Override
+    public T first() {
+<span class="nc bnc" id="L50" title="All 2 branches missed.">        if(this.first == null) throw new DoubleEndedQueueException(&quot;La lista está vacía&quot;);</span>
+<span class="nc" id="L51">        return this.first.getItem();</span>
+    }
+    public T last() {
+<span class="nc bnc" id="L54" title="All 2 branches missed.">        if(this.first == null) throw new DoubleEndedQueueException(&quot;La lista está vacía&quot;);</span>
+<span class="nc" id="L55">        return this.last.getItem();</span>
+    }
+
+    @Override
+    public int size() {
+<span class="fc" id="L60">        return size;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>
