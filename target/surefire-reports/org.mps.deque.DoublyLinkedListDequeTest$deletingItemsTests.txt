@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: org.mps.deque.DoublyLinkedListDequeTest$deletingItemsTests
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.083 s - in org.mps.deque.DoublyLinkedListDequeTest$deletingItemsTests
+org.mps.deque.DoublyLinkedListDequeTest$deletingItemsTests.deletingFirstItemFromAOneItemList  Time elapsed: 0.05 s
+org.mps.deque.DoublyLinkedListDequeTest$deletingItemsTests.deletingLastItemFromAOneItemList  Time elapsed: 0.001 s
+org.mps.deque.DoublyLinkedListDequeTest$deletingItemsTests.deletingLastItemFromAnEmptyList  Time elapsed: 0.002 s
+org.mps.deque.DoublyLinkedListDequeTest$deletingItemsTests.deletingFirstItemFromAnEmptyList  Time elapsed: 0.001 s
+org.mps.deque.DoublyLinkedListDequeTest$deletingItemsTests.deletingLastItemFromAFourItemsList  Time elapsed: 0.004 s
+org.mps.deque.DoublyLinkedListDequeTest$deletingItemsTests.deletingFirstItemFromAFourItemsList  Time elapsed: 0.001 s

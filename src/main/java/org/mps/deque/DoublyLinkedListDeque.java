@@ -14,6 +14,9 @@ public class DoublyLinkedListDeque<T> implements DoubleEndedQueue<T> {
     @Override
     public void prepend(T value) {
         DequeNode<T> firstNode = new DequeNode<>(value, null, this.first);
+        if(this.first != null){
+            this.first.setPrevious(firstNode);
+        }
         if(this.first == null){
             this.last = firstNode;
         }
@@ -24,6 +27,9 @@ public class DoublyLinkedListDeque<T> implements DoubleEndedQueue<T> {
     @Override
     public void append(T value) {
         DequeNode<T> lastNode = new DequeNode<>(value, this.last, null);
+        if(this.last != null){
+            this.last.setNext(lastNode);
+        }
         if(this.first == null){
             this.first = lastNode;
         }
@@ -36,6 +42,9 @@ public class DoublyLinkedListDeque<T> implements DoubleEndedQueue<T> {
         if(this.first == null) throw new DoubleEndedQueueException("La lista está vacía");
         this.first = this.first.getNext();
         size--;
+        if(size == 0){
+            this.last = null;
+        }
     }
 
     @Override
@@ -43,6 +52,9 @@ public class DoublyLinkedListDeque<T> implements DoubleEndedQueue<T> {
         if(this.first == null) throw new DoubleEndedQueueException("La lista está vacía");
         this.last = this.last.getPrevious();
         size--;
+        if(size == 0){
+            this.first = null;
+        }
     }
 
     @Override
