@@ -1,15 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: org.mps.deque.DoublyLinkedListDequeTest$FirstAndLastItemTests
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 s - in org.mps.deque.DoublyLinkedListDequeTest$FirstAndLastItemTests
-org.mps.deque.DoublyLinkedListDequeTest$FirstAndLastItemTests.lastItemOnAFiveItemsList  Time elapsed: 0.002 s
-org.mps.deque.DoublyLinkedListDequeTest$FirstAndLastItemTests.lastItemOfAnEmptyQueueIsNull  Time elapsed: 0.003 s
-org.mps.deque.DoublyLinkedListDequeTest$FirstAndLastItemTests.firstItemEqualsLastItemWhenPreppendingToAEmptyList  Time elapsed: 0.003 s
-org.mps.deque.DoublyLinkedListDequeTest$FirstAndLastItemTests.firstItemOnATwoItemsList  Time elapsed: 0.003 s
-org.mps.deque.DoublyLinkedListDequeTest$FirstAndLastItemTests.firstAndlastItemOfASingleItemQueueAreTheSame  Time elapsed: 0.002 s
-org.mps.deque.DoublyLinkedListDequeTest$FirstAndLastItemTests.firstItemOfAnEmptyQueueIsNull  Time elapsed: 0.003 s
-org.mps.deque.DoublyLinkedListDequeTest$FirstAndLastItemTests.firstItemEqualsLastItemWhenAppendingToAEmptyList  Time elapsed: 0.003 s
-org.mps.deque.DoublyLinkedListDequeTest$FirstAndLastItemTests.firstItemOnAFiveItemsList  Time elapsed: 0.003 s
-org.mps.deque.DoublyLinkedListDequeTest$FirstAndLastItemTests.firstItemWhenPrepending  Time elapsed: 0.002 s
-org.mps.deque.DoublyLinkedListDequeTest$FirstAndLastItemTests.lastItemOnATwoItemsList  Time elapsed: 0.005 s
-org.mps.deque.DoublyLinkedListDequeTest$FirstAndLastItemTests.lastItemWhenPrepending  Time elapsed: 0.002 s
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in org.mps.deque.DoublyLinkedListDequeTest$FirstAndLastItemTests
+org.mps.deque.DoublyLinkedListDequeTest$FirstAndLastItemTests.lastItemOnAFiveItemsList  Time elapsed: 0 s
+org.mps.deque.DoublyLinkedListDequeTest$FirstAndLastItemTests.lastItemOfAnEmptyQueueIsNull  Time elapsed: 0.002 s
+org.mps.deque.DoublyLinkedListDequeTest$FirstAndLastItemTests.firstItemEqualsLastItemWhenPreppendingToAEmptyList  Time elapsed: 0.001 s
+org.mps.deque.DoublyLinkedListDequeTest$FirstAndLastItemTests.firstItemOnATwoItemsList  Time elapsed: 0 s
+org.mps.deque.DoublyLinkedListDequeTest$FirstAndLastItemTests.firstAndlastItemOfASingleItemQueueAreTheSame  Time elapsed: 0 s
+org.mps.deque.DoublyLinkedListDequeTest$FirstAndLastItemTests.firstItemOfAnEmptyQueueIsNull  Time elapsed: 0.001 s
+org.mps.deque.DoublyLinkedListDequeTest$FirstAndLastItemTests.firstItemEqualsLastItemWhenAppendingToAEmptyList  Time elapsed: 0 s
+org.mps.deque.DoublyLinkedListDequeTest$FirstAndLastItemTests.firstItemOnAFiveItemsList  Time elapsed: 0 s
+org.mps.deque.DoublyLinkedListDequeTest$FirstAndLastItemTests.firstItemWhenPrepending  Time elapsed: 0.001 s
+org.mps.deque.DoublyLinkedListDequeTest$FirstAndLastItemTests.lastItemOnATwoItemsList  Time elapsed: 0.002 s
+org.mps.deque.DoublyLinkedListDequeTest$FirstAndLastItemTests.lastItemWhenPrepending  Time elapsed: 0.001 s
