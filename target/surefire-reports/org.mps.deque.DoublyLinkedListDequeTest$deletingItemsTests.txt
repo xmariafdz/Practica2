@@ -1,10 +1,19 @@
 -------------------------------------------------------------------------------
 Test set: org.mps.deque.DoublyLinkedListDequeTest$deletingItemsTests
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s - in org.mps.deque.DoublyLinkedListDequeTest$deletingItemsTests
 org.mps.deque.DoublyLinkedListDequeTest$deletingItemsTests.deletingFirstItemFromASingleItemQueue  Time elapsed: 0.003 s
 org.mps.deque.DoublyLinkedListDequeTest$deletingItemsTests.deletingLastItemFromAnEmptyList  Time elapsed: 0.003 s
 org.mps.deque.DoublyLinkedListDequeTest$deletingItemsTests.deletingLastItemFromASingleItemQueue  Time elapsed: 0.003 s
 org.mps.deque.DoublyLinkedListDequeTest$deletingItemsTests.deletingFirstItemFromAFourItemsQueue  Time elapsed: 0.001 s
 org.mps.deque.DoublyLinkedListDequeTest$deletingItemsTests.deletingFirstItemFromAnEmptyList  Time elapsed: 0.002 s
+=======
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in org.mps.deque.DoublyLinkedListDequeTest$deletingItemsTests
+org.mps.deque.DoublyLinkedListDequeTest$deletingItemsTests.deletingFirstItemFromASingleItemQueue  Time elapsed: 0.008 s
+org.mps.deque.DoublyLinkedListDequeTest$deletingItemsTests.deletingLastItemFromAnEmptyList  Time elapsed: 0 s
+org.mps.deque.DoublyLinkedListDequeTest$deletingItemsTests.deletingLastItemFromASingleItemQueue  Time elapsed: 0.002 s
+org.mps.deque.DoublyLinkedListDequeTest$deletingItemsTests.deletingFirstItemFromAFourItemsQueue  Time elapsed: 0 s
+org.mps.deque.DoublyLinkedListDequeTest$deletingItemsTests.deletingFirstItemFromAnEmptyList  Time elapsed: 0.001 s
+>>>>>>> fd31c80b56c9a604f43f1d534527ceace5352849
 org.mps.deque.DoublyLinkedListDequeTest$deletingItemsTests.deletingLastItemFromAFourItemsList  Time elapsed: 0.001 s

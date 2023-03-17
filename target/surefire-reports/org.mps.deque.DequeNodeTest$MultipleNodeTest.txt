@@ -1,7 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: org.mps.deque.DequeNodeTest$MultipleNodeTest
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.132 s - in org.mps.deque.DequeNodeTest$MultipleNodeTest
 org.mps.deque.DequeNodeTest$MultipleNodeTest.testThatALastNodeisTerminal  Time elapsed: 0.087 s
 org.mps.deque.DequeNodeTest$MultipleNodeTest.testThatNodeIsNotTerminal  Time elapsed: 0.004 s
+=======
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 s - in org.mps.deque.DequeNodeTest$MultipleNodeTest
+org.mps.deque.DequeNodeTest$MultipleNodeTest.testThatALastNodeisTerminal  Time elapsed: 0.056 s
+org.mps.deque.DequeNodeTest$MultipleNodeTest.testThatNodeIsNotTerminal  Time elapsed: 0.001 s
+>>>>>>> fd31c80b56c9a604f43f1d534527ceace5352849
 org.mps.deque.DequeNodeTest$MultipleNodeTest.middleNodeIsNotNeitherFirstNorLast  Time elapsed: 0.002 s

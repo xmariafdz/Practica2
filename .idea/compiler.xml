@@ -7,10 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="mps2023" />
+        <module name="Practica2" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Practica2" target="19" />
-    </bytecodeTargetLevel>
   </component>
 </project>

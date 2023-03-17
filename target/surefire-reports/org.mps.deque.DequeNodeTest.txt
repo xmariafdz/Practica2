@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: org.mps.deque.DequeNodeTest
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.476 s - in org.mps.deque.DequeNodeTest
+=======
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.262 s - in org.mps.deque.DequeNodeTest
+>>>>>>> fd31c80b56c9a604f43f1d534527ceace5352849

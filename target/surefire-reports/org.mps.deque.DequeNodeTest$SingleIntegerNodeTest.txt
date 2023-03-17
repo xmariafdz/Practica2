@@ -1,8 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: org.mps.deque.DequeNodeTest$SingleIntegerNodeTest
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.306 s - in org.mps.deque.DequeNodeTest$SingleIntegerNodeTest
 org.mps.deque.DequeNodeTest$SingleIntegerNodeTest.returnedItemByGetMethodIsCorrect  Time elapsed: 0.008 s
 org.mps.deque.DequeNodeTest$SingleIntegerNodeTest.SetItemIsCorrect  Time elapsed: 0.284 s
 org.mps.deque.DequeNodeTest$SingleIntegerNodeTest.singleNodeImpliesTerminalNode  Time elapsed: 0.002 s
+=======
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.161 s - in org.mps.deque.DequeNodeTest$SingleIntegerNodeTest
+org.mps.deque.DequeNodeTest$SingleIntegerNodeTest.returnedItemByGetMethodIsCorrect  Time elapsed: 0.004 s
+org.mps.deque.DequeNodeTest$SingleIntegerNodeTest.SetItemIsCorrect  Time elapsed: 0.149 s
+org.mps.deque.DequeNodeTest$SingleIntegerNodeTest.singleNodeImpliesTerminalNode  Time elapsed: 0.001 s
+>>>>>>> fd31c80b56c9a604f43f1d534527ceace5352849
 org.mps.deque.DequeNodeTest$SingleIntegerNodeTest.SingleNodeMeansFirstAndLast  Time elapsed: 0.001 s
