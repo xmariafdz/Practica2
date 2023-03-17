@@ -1,0 +1,5 @@
+-------------------------------------------------------------------------------
+Test set: org.mps.deque.DoublyLinkedListDequeTest$checkingWhetherItDeletesAnItemCorrectly
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s - in org.mps.deque.DoublyLinkedListDequeTest$checkingWhetherItDeletesAnItemCorrectly
+org.mps.deque.DoublyLinkedListDequeTest$checkingWhetherItDeletesAnItemCorrectly.checksIfItDeletesAnItemFromA5itemsListCorrectly  Time elapsed: 0.002 s

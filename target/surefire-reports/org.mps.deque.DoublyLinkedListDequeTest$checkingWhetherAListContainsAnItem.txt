@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: org.mps.deque.DoublyLinkedListDequeTest$checkingWhetherAListContainsAnItem
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in org.mps.deque.DoublyLinkedListDequeTest$checkingWhetherAListContainsAnItem
+org.mps.deque.DoublyLinkedListDequeTest$checkingWhetherAListContainsAnItem.checkIfAnItemIsInAFourElementsList  Time elapsed: 0.008 s
+org.mps.deque.DoublyLinkedListDequeTest$checkingWhetherAListContainsAnItem.check3ItemsListContainsAnItem  Time elapsed: 0.002 s
+org.mps.deque.DoublyLinkedListDequeTest$checkingWhetherAListContainsAnItem.check3ItemsListDoesNotContainAnItem  Time elapsed: 0.002 s
+org.mps.deque.DoublyLinkedListDequeTest$checkingWhetherAListContainsAnItem.checkIfAListContainsNullValue  Time elapsed: 0.002 s
+org.mps.deque.DoublyLinkedListDequeTest$checkingWhetherAListContainsAnItem.checkEmptyListContainsNothing  Time elapsed: 0.003 s

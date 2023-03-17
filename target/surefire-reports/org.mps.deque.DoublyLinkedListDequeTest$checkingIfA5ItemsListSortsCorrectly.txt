@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: org.mps.deque.DoublyLinkedListDequeTest$checkingIfA5ItemsListSortsCorrectly
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 s - in org.mps.deque.DoublyLinkedListDequeTest$checkingIfA5ItemsListSortsCorrectly
+org.mps.deque.DoublyLinkedListDequeTest$checkingIfA5ItemsListSortsCorrectly.checkIfSortingAnEmptyListResultsInAnEmptyList  Time elapsed: 0.019 s
+org.mps.deque.DoublyLinkedListDequeTest$checkingIfA5ItemsListSortsCorrectly.checkIfSortingAnSingleItemListResultsTheSameList  Time elapsed: 0.002 s
+org.mps.deque.DoublyLinkedListDequeTest$checkingIfA5ItemsListSortsCorrectly.checkIfItSortsA5ItemsListCorrectly  Time elapsed: 0.001 s
+org.mps.deque.DoublyLinkedListDequeTest$checkingIfA5ItemsListSortsCorrectly.checkIfItSortsA5ItemsListCorrectlyWhenArgumentIsNull  Time elapsed: 0.003 s

@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: org.mps.deque.DoublyLinkedListDequeTest
 -------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 s - in org.mps.deque.DoublyLinkedListDequeTest
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.254 s - in org.mps.deque.DoublyLinkedListDequeTest

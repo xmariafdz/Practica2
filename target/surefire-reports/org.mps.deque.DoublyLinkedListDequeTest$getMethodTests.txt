@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: org.mps.deque.DoublyLinkedListDequeTest$getMethodTests
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 s - in org.mps.deque.DoublyLinkedListDequeTest$getMethodTests
+org.mps.deque.DoublyLinkedListDequeTest$getMethodTests.checkIfFirstItemFromASingleItemListIsThatOneItem  Time elapsed: 0.003 s
+org.mps.deque.DoublyLinkedListDequeTest$getMethodTests.checkThatNegativeIndexIsInvalid  Time elapsed: 0.013 s
+org.mps.deque.DoublyLinkedListDequeTest$getMethodTests.checkWhetherItReturnsSixthItemCorrectly  Time elapsed: 0.007 s
+org.mps.deque.DoublyLinkedListDequeTest$getMethodTests.checkThatIndexBiggerThanSizeIsInvalid  Time elapsed: 0.003 s
+org.mps.deque.DoublyLinkedListDequeTest$getMethodTests.checkIfLastItemFromASingleItemListIsThatOneItem  Time elapsed: 0.002 s
+org.mps.deque.DoublyLinkedListDequeTest$getMethodTests.checkIfFifthItemFromThreeItemsListThrowsAnException  Time elapsed: 0.003 s
+org.mps.deque.DoublyLinkedListDequeTest$getMethodTests.checkIfFirstItemFromAnEmptyListThrowsAnException  Time elapsed: 0.003 s
+org.mps.deque.DoublyLinkedListDequeTest$getMethodTests.checkThirdElementFromAnEvenSizeListIsCorrect  Time elapsed: 0.002 s
+org.mps.deque.DoublyLinkedListDequeTest$getMethodTests.checkFourthElementFromAnUnevenSizeListIsCorrect  Time elapsed: 0.003 s

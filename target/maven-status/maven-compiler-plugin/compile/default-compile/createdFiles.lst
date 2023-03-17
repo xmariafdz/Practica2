@@ -1,0 +1,4 @@
+org\mps\deque\DequeNode.class
+org\mps\deque\DoubleEndedQueue.class
+org\mps\deque\DoubleEndedQueueException.class
+org\mps\deque\DoublyLinkedListDeque.class

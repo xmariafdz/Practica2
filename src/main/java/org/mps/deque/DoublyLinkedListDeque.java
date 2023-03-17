@@ -1,5 +1,8 @@
 package org.mps.deque;
 
+import java.util.Comparator;
+import java.util.Objects;
+
 public class DoublyLinkedListDeque<T> implements DoubleEndedQueue<T> {
 
     private DequeNode<T> first;
@@ -70,5 +73,100 @@ public class DoublyLinkedListDeque<T> implements DoubleEndedQueue<T> {
     @Override
     public int size() {
         return size;
+    }
+
+    @Override
+    public T get(int index) {
+        if (index < 0 || index > size()) throw new DoubleEndedQueueException("Invalid index");
+
+        int half = size()/2;
+        DequeNode<T> node;
+
+        if(index <= half){
+            node = first;
+            for (int i = 0; i < index; i++)  node = node.getNext();
+        } else {
+            node = last;
+            for(int i = (size()-1); i > index; i--) node = node.getPrevious();
+        }
+        return node.getItem();
+    }
+
+    private DequeNode<T> search(T value){
+        DequeNode<T> node = first;
+        boolean stop = false;
+        while(node != null && !stop){
+           // stop = node.getItem().equals(value);
+            stop = Objects.equals(node.getItem(),value);
+            if(!stop) node = node.getNext();
+        }
+        return node;
+    }
+    @Override
+    public boolean contains(T value) {
+        return search(value) != null;
+    }
+
+    @Override
+    public void remove(T value) {
+        DequeNode node = search(value);
+        if(node != null){
+            if(node.getPrevious() == null){
+                deleteFirst();
+            }else if(node.getNext() == null){
+                deleteLast();
+            } else {
+                DequeNode nodoAnterior = node.getPrevious();
+                DequeNode nodoPosterior = node.getNext();
+
+                nodoAnterior.setNext(nodoPosterior);
+                nodoPosterior.setPrevious(nodoAnterior);
+
+            }
+            size--;
+        }
+    }
+
+    @Override
+    public void sort(Comparator<? super T> comparator) {
+        if (size() <= 1) {
+            return;
+        }
+        if(comparator == null){
+            comparator = (Comparator<? super T>) Comparator.naturalOrder();
+        }
+        DequeNode<T> pivot = first;
+        DoublyLinkedListDeque<T> lowerHalf = new DoublyLinkedListDeque<>();
+        DoublyLinkedListDeque<T> greaterHalf = new DoublyLinkedListDeque<>();
+        DequeNode<T> currentNode = first.getNext();
+
+        while (currentNode != null) {
+            int cmp = comparator.compare(currentNode.getItem(), pivot.getItem());
+            if (cmp >= 0) {
+                greaterHalf.append(currentNode.getItem());
+            } else {
+                lowerHalf.append(currentNode.getItem());
+            }
+            currentNode = currentNode.getNext();
+        }
+
+        lowerHalf.sort(comparator);
+        greaterHalf.sort(comparator);
+
+        if (lowerHalf.size() > 0) {
+            first = lowerHalf.first;
+            lowerHalf.last.setNext(pivot);
+            pivot.setPrevious(lowerHalf.last);
+        } else {
+            first = pivot;
+        }
+
+        if (greaterHalf.size() > 0) {
+            pivot.setNext(greaterHalf.first);
+            greaterHalf.first.setPrevious(pivot);
+            last = greaterHalf.last;
+        } else {
+            last = pivot;
+        }
     }
 }

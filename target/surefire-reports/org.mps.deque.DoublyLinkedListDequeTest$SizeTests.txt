@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: org.mps.deque.DoublyLinkedListDequeTest$SizeTests
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.mps.deque.DoublyLinkedListDequeTest$SizeTests
+org.mps.deque.DoublyLinkedListDequeTest$SizeTests.sizeOfAThreeItemsQueueIsThree  Time elapsed: 0.003 s
+org.mps.deque.DoublyLinkedListDequeTest$SizeTests.sizeOfAnEmptyListIsZero  Time elapsed: 0.001 s
+org.mps.deque.DoublyLinkedListDequeTest$SizeTests.sizeOfASingleItemQueueIsOne  Time elapsed: 0.001 s

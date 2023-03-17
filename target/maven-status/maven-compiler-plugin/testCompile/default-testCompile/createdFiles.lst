@@ -1,1 +1,7 @@
+org\mps\deque\DequeNodeTest$MultipleNodeTest.class
+org\mps\deque\DoublyLinkedListDequeTest$FirstAndLastItemTests.class
+org\mps\deque\DequeNodeTest$SingleIntegerNodeTest.class
+org\mps\deque\DequeNodeTest.class
 org\mps\deque\DoublyLinkedListDequeTest$deletingItemsTests.class
+org\mps\deque\DoublyLinkedListDequeTest.class
+org\mps\deque\DoublyLinkedListDequeTest$checkingWhetherItRemovesAnItemCorrectly.class
